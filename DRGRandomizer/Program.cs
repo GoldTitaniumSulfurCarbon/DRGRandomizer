@@ -15,7 +15,7 @@ namespace DRGRandomizer
             while ((input!='a')&& (input != 'b') && (input != 'c') && (input != 'd') && (input != 'q'))
             {
                 WriteLine("Please put in a number for the Dwarf you want to randomize.\n\"a\" for Scout\n\"b\" for Gunner\n\"c\" for Engineer\n\"d\" for Driller\n\"e\" for a random dwarf\n\"q\" to quit. ");
-                input = ReadKey().KeyChar;
+                input = Char.ToLower(ReadKey().KeyChar);
                 
                 WriteLine("\n\n"); //to give space
                 if (input == 'a')
